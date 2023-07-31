@@ -16,5 +16,9 @@ mix.jigsaw()
     .version();
 mix.browserSync({
     proxy: "http://localhost:8000",
-    browser: "msedge"
+    browser: "msedge",
+    files: [
+        'public/lib/css/app.css', 
+        'source/**/*.(php|css|js)'
+    ]
 });
