@@ -1,0 +1,13 @@
+{
+    "require": {
+        "tightenco/jigsaw": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.3"
+    }
+}
