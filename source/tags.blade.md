@@ -4,7 +4,7 @@ description: "On this website you will find a bunch of photo galleries and littl
 metaTitle: "Tags title"
 metaDescription: "Tags meta description"
 keywords: "kw1, kw2"
-extends: _layouts.blog
+extends: _components.layouts.blog
 section: main
 ---
 <h1>{{ $page->title }}</h1>
