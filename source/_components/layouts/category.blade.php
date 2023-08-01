@@ -1,5 +1,5 @@
 <x-layouts.master :page="$page">
-
+    
 @section('main')
     <h1>{{ $page->title }}</h1>
     <div class="perex">
@@ -7,7 +7,7 @@
     </div>
     @yield('content')
 
-    @foreach ($posts as $post)
+    @foreach ($page->posts($posts) as $post)
         <div class="flex flex-col mb-4">
             <h2 class="text-3xl mt-0">
                 <a

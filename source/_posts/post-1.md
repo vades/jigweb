@@ -5,7 +5,7 @@ description: "Vestibulum scelerisque quam at leo feugiat, quis vulputate dui sus
 metaTitle: "Post 1 meta title"
 metaDescription: "Post 1 meta description"
 keywords: "kw1, kw2"
-category: "category-1"
+categories: [category-1]
 img: null
 featured: false
 author: "John Doe"

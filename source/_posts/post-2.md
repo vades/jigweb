@@ -5,7 +5,7 @@ description: "Maecenas a elit mauris. Nulla facilisi. Maecenas nec turpis ac nun
 metaTitle: "Post 2 meta title"
 metaDescription: "Post 1 meta description"
 keywords: "kw1, kw2"
-category: "category-2"
+categories: [category-2]
 img: null
 featured: false
 author: "John Doe"

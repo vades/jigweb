@@ -5,7 +5,7 @@ description: "Integer eget varius lectus, eget ultrices enim. Integer sem."
 metaTitle: "Post 3 meta title"
 metaDescription: "Post 3 meta description"
 keywords: "kw1, kw2"
-category: "category-1"
+categories: [category-1]
 img: null
 featured: false
 author: "John Doe"
