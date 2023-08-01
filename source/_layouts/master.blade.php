@@ -14,10 +14,7 @@
         <div class="flex flex-col h-screen justify-between">
             <x-partials.header />
             <x-partials.page>
-                <slot>
-                    @yield('main') 
-                </slot>
-               
+               @yield('main') 
               
                <x-slot:aside>
                     @yield('sidebar')

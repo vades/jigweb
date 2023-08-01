@@ -14,5 +14,10 @@
         "postcss": "^8.4.14",
         "postcss-import": "^14.0.0",
         "tailwindcss": "^3.1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
     }
 }

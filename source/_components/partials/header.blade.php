@@ -9,6 +9,7 @@
         </div>
         <nav>
             <a class="pl-4" href="/blog">Blog</a>
+            <a class="pl-4" href="/tags">Tags</a>
             <a class="pl-4" href="/pages/about">About</a>
             <a class="pl-4" href="">Contact</a>
         </nav>
