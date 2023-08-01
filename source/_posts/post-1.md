@@ -1,19 +1,16 @@
 ---
 published: true
 title: "Post 1"
-description: "On this website you will find a bunch of photo galleries and little stories about the famous locations and history of Nuremberg"
-metaTitle: "About title"
-metaDescription: "About meta description"
+description: "Vestibulum scelerisque quam at leo feugiat, quis vulputate dui suscipit."
+metaTitle: "Post 1 meta title"
+metaDescription: "Post 1 meta description"
 keywords: "kw1, kw2"
-category: "file-name"
+category: "category-1"
 img: null
 featured: false
 author: "John Doe"
 date: 2023-02-15
 ---
+Proin hendrerit neque quis augue tristique, vel consequat est bibendum. Suspendisse potenti. Maecenas a elit mauris. Nulla facilisi. Maecenas nec turpis ac nunc pellentesque elementum. Quisque consequat ex elit, non vestibulum nisi efficitur eu. Fusce vitae enim purus. 
 
-We are a group of friends and colleagues who work together in a multinational company based in Nuremberg.
-
-As true fans of Nuremberg, we launched this project with the desire to share with you our impressions of this wonderful city.
-
-On this website you will find a bunch of photo galleries and little stories about the famous locations and history of Nuremberg, as well as some adventures from exploring the hidden corners of the city.
+Sed in dolor vel eros interdum volutpat. Nulla facilisi. Integer eget varius lectus, eget ultrices enim. Integer sem

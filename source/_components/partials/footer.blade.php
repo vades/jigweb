@@ -4,6 +4,7 @@
         <nav>
             <a class="pl-2" href="/">Home</a>
             <a class="pl-2" href="/blog">Blog</a>
+            <a class="pl-4" href="/tags">Tags</a>
             <a class="pl-2" href="/pages/about">About</a>
             <a class="pl-2" href="">Contact</a>
         </nav>
