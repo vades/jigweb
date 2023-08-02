@@ -5,7 +5,7 @@ description: "On this website you will find a bunch of photo galleries and littl
 metaTitle: "About title"
 metaDescription: "About meta description"
 keywords: "kw1, kw2"
-img: null
+img: "https://picsum.photos/200/200"
 ---
 
 Donec nec mi quis lectus laoreet malesuada. Duis at velit vel lectus malesuada scelerisque. In sagittis velit id mauris pellentesque, eu tincidunt mi dictum. Sed posuere erat a ex pharetra tincidunt. 
