@@ -9,6 +9,6 @@
 @endsection
 
 @section('sidebar')
-    <x-partials.aside-blog />
+    <x-blog.sidebar />
 @endsection
 </x-layouts.master>
