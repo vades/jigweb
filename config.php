@@ -21,7 +21,7 @@ return [
             'path' => function ($page) {
                 return 'pages/'  . Str::slug($page->getFilename());
             },
-            'extends' => '_components.layouts.page',
+            'extends' => '_components.page.index',
             'section' =>  'content',
         ],
         'posts' => [
@@ -35,7 +35,7 @@ return [
             'path' => function ($post) {
                 return 'blog/'  . Str::slug($post->getFilename());
             },
-            'extends' => '_components.layouts.post',
+            'extends' => '_components.blog.post.index',
             'section' =>  'content',
         ],
         'categories' => [
@@ -48,7 +48,7 @@ return [
                 });
             },
 
-            'extends' => '_components.layouts.category',
+            'extends' => '_components.blog.category.index',
             'section' =>  'content',
         ],
     ],
