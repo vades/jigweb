@@ -8,13 +8,15 @@
     @yield('content')
 
     @foreach ($categories as $category)
-    <h2 class="text-3xl mt-0">
-        <a
-            href="{{ $category->getUrl() }}"
-            title="Read more - {{ $category->title }}"
-            class="text-gray-900 font-extrabold"
-        >{{ $category->title }}</a>
-    </h2>
+    <article class="border-solid border-2 border-blue-500 p-4">
+        <h2>
+            <a href="{{ $category->getUrl() }}">{{ $category->title }}</a>
+        </h2>
+        <p>
+            {{ $category->description }} 
+        </p>
+        <a href="{{ $category->getUrl() }}">Show articles for this category</a>
+    </article>
     @endforeach
 @endsection
 
