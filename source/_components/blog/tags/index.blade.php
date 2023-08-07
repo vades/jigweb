@@ -11,17 +11,17 @@
     </div>
     @yield('content')
 
-    <section class="tags-list">
+    <section class="border-solid border-2 border-red-500 p-4">
         @foreach ($tagsArray as $key => $items)
         <a href="#{{$key}}">{{$key}}</a>
         @endforeach
     </section>
-    <section class="tags-items">
+    <section class="border-solid border-2 border-gray-200  p-4">
         @foreach ($tagsArray as $key => $items)
-            <article class="tag-posts">
+            <article class="border-solid border-2 border-green-500  p-4">
                 <h2 id="{{$key}}">{{$key}}</h2>
                     @foreach ($items as $item)
-                        <div class="tag-post-item">
+                        <div class="border-solid border-2 border-blue-500 p-4">
                             @if ($item['post']['img'] ?? null)
                                 <figure class="tags-img">
                                     <a href="{{$item['post']['path']}}">
