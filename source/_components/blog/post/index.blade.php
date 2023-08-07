@@ -8,9 +8,7 @@
     <section class="post-head">
         @if ($page->img ?? null)
             <figure class="post-img">
-                <a href="{{ $page->getPath() }}">
-                    <img src="{{ $page->img }}" alt="{{ $page->title }}">
-                </a>
+                <img src="{{ $page->img }}" alt="{{ $page->title }}">
             </figure>
         @endif
 
