@@ -72,7 +72,7 @@
 @endsection
 
 @section('sidebar')
-    <x-blog.sidebar />
+    <x-blog.sidebar :page="$page" :posts="$posts" :categories="$categories" />
 @endsection
 </x-layouts.master>
   
