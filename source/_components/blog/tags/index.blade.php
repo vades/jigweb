@@ -42,6 +42,6 @@
 @endsection
 
 @section('sidebar')
-    <x-blog.sidebar />
+    {{-- <x-blog.sidebar :posts="$posts" /> --}}
 @endsection
 </x-layouts.master>
