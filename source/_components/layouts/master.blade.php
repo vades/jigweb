@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="text-gray-900 font-sans antialiased">
+    <body class="bg-slate-50 text-gray-900 font-sans antialiased">
         <div class="flex flex-col h-screen justify-between">
             <x-partials.header />
             <x-partials.page>
