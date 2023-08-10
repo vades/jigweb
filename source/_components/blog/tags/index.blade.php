@@ -5,40 +5,43 @@
         $tagsArray = $page->getTagsCollection($posts);
         
     @endphp
-    <h1>{{ $page->title }}</h1>
-    <div class="perex">
-         {{ $page->description }}
-    </div>
-    @yield('content')
+    <section class="mb-6">
+        <h1 class="text-3xl text-gray-8600 mb-3">{{ $page->title }}</h1>
+        <div class="font-bold">
+            {{ $page->description }}
+        </div>
+    </section>
+    <section class="content">
+        @yield('content')
+    </section>
 
-    <section class="border-solid border-2 border-red-500 p-4">
+    <section class="mb-3">
         @foreach ($tagsArray as $key => $items)
-        <a href="#{{$key}}">{{$key}}</a>
+        <a class="bg-slate-200 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded" href="#{{$key}}">{{$key}}</a>
         @endforeach
     </section>
-    <section class="border-solid border-2 border-gray-200  p-4">
         @foreach ($tagsArray as $key => $items)
-            <article class="border-solid border-2 border-green-500  p-4">
-                <h2 id="{{$key}}">{{$key}}</h2>
+            <section class="mb-3">
+                <h2 class="text-2xl font-bold text-gray-800 mb-3" id="{{$key}}"># {{$key}}</h2>
                     @foreach ($items as $item)
-                        <div class="border-solid border-2 border-blue-500 p-4">
-                            @if ($item['post']['img'] ?? null)
+                        <article class="mb-3">
+                            {{-- @if ($item['post']['img'] ?? null)
                                 <figure class="tags-img">
                                     <a href="{{$item['post']['path']}}">
-                                    <img src="{{$item['post']['img']}}" alt="{{$item['post']['title']}}">
+                                    <img class="w-24 border-4 border-slate-300" src="{{$item['post']['img']}}" alt="{{$item['post']['title']}}">
                                 </a>
                                 </figure>
-                            @endif
-                        
-                            <a href="{{$item['post']['path']}}" title="{{$item['post']['description']}}">
-                                <h3>{{$item['post']['title']}}</h3>
-                            </a>
-                        </div>
+                            @endif --}}
+                            <h3 class="text-md text-gray-800 mb-3">
+                                <a href="{{$item['post']['path']}}" title="{{$item['post']['description']}}">
+                                    {{$item['post']['title']}}
+                                </a>
+                            </h3>
+                        </article>
                         
                     @endforeach
-            </article>
+                </section>
         @endforeach
-    </section>
 @endsection
 
 @section('sidebar')

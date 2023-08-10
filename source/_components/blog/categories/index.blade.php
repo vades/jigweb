@@ -1,26 +1,28 @@
 <x-layouts.master :page="$page">
     
 @section('main')
-    <h1>{{ $page->title }}</h1>
-    <div class="perex">
-         {{ $page->description }}
-    </div>
-    @yield('content')
+    <section class="mb-6">
+        <h1 class="text-3xl text-gray-8600 mb-3">{{ $page->title }}</h1>
+        <div class="font-bold">
+            {{ $page->description }}
+        </div>
+    </section>
+    <section class="content">
+        @yield('content')
+    </section>
 
     @foreach ($categories as $category)
-    <article class="border-solid border-2 border-blue-500 p-4">
-        <h2>
+    <article class="mb-4 pb-3 border-b border-slate-300">
+        <h2 class="text-2xl font-bold text-gray-800 mb-3">
             <a href="{{ $category->getUrl() }}">{{ $category->title }}</a>
         </h2>
-        <p>
-            {{ $category->description }} 
-        </p>
-        <a href="{{ $category->getUrl() }}">Show articles for this category</a>
+        <div class="mb-3">{{ $category->description}}</div>
+        <a class="text-blue-800 text-lg" href="{{ $category->getUrl() }}">Show articles for this category &raquo;</a>
     </article>
     @endforeach
 @endsection
 
-@section('sidebar')
+{{-- @section('sidebar')
     <x-blog.sidebar :page="$page" :posts="$posts" :categories="$categories" />
-@endsection
+@endsection --}}
 </x-layouts.master>
