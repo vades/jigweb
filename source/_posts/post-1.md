@@ -1,6 +1,6 @@
 ---
 published: true
-title: "Post 1"
+title: "Maecenas nec turpis ac nunc pellentesque elementum"
 description: "Vestibulum scelerisque quam at leo feugiat, quis vulputate dui suscipit."
 metaTitle: "Post 1 meta title"
 metaDescription: "Post 1 meta description"
