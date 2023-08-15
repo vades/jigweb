@@ -6,7 +6,7 @@ metaTitle: "Post 2 meta title"
 metaDescription: "Post 1 meta description"
 keywords: "kw1, kw2"
 categories: [category-2]
-img: "https://picsum.photos/200/200"
+img: "https://picsum.photos/400/400"
 featured: false
 author: "John Doe"
 date: 2023-05-15
