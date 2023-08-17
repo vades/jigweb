@@ -1,10 +1,10 @@
 <x-layouts.master :page="$page">
     
 @section('main')
-    <section class="mb-6">
+    <section class="flex flex-col md:flex-row md:items-start mb-3">
         @if ($page->img ?? null)
-            <figure class="mb-3">
-                <img class="w-24 border-4 border-slate-300" src="{{ $page->img }}" alt="{{ $page->title }}">
+            <figure class="mb-3 md:mr-3">
+                <img class="w-48 border-4 border-slate-300" src="{{ $page->img }}" alt="{{ $page->title }}">
             </figure>
         @endif
         <div>
