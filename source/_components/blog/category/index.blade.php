@@ -10,12 +10,12 @@
     <section class="content">
         @yield('content')
     </section>
-    <section class="articles">
+    <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($page->posts($posts) as $post)
-            <article class="mb-4 pb-3 border-b border-slate-300">
-                <figure class="">
+            <article class="flex flex-col md:flex-row md:items-start mb-4 pb-3 border-b border-slate-300">
+                <figure class="mb-3 md:mr-3">
                     <a href="{{ $post->getPath() }}">
-                        <img class="w-24 border-4 border-slate-300" src="{{ $post->img }}" alt="{{ $post->title }}">
+                        <img class="border-4 border-slate-300 w-40" src="{{ $post->img }}" alt="{{ $post->title }}">
                     </a>
                 </figure>
                 <div class="">

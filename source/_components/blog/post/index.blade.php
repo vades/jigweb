@@ -5,10 +5,10 @@
     $next = $page->getNext();
 @endphp   
 @section('main')
-    <section class="post-head">
+    <section class="flex flex-col md:flex-row md:items-start mb-3">
         @if ($page->img ?? null)
-            <figure class="mb-3">
-                <img class="w-40 border-4 border-white drop-shadow-lg" src="{{ $page->img }}" alt="{{ $page->title }}">
+            <figure class="mb-3 md:mr-3">
+                <img class="w-48 border-4 border-white drop-shadow-lg" src="{{ $page->img }}" alt="{{ $page->title }}">
             </figure>
         @endif
 
@@ -24,7 +24,7 @@
         </div>
     
     </section>
-    <article class="mb-3">
+    <article class="mb-3 pt-3 border-t border-slate-300">
         @yield('content')
     </article>
 
