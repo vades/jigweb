@@ -57,7 +57,7 @@
     <p class="text-sm uppercase pb-3">Other articles</p>
     <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($posts as $post)
-            <article class="flex flex-col md:flex-row md:items-start mb-4 pb-3 border-b border-slate-300">
+            <article class="flex flex-col md:flex-row md:items-start mb-3 pt-3 border-t border-slate-300">
                 <figure class="mb-3 md:mr-3">
                     <a href="{{ $post->getPath() }}">
                         <img class="border-4 border-slate-300 w-40" src="{{ $post->img }}" alt="{{ $post->title }}">

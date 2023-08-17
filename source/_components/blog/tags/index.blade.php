@@ -20,8 +20,9 @@
         <a class="bg-slate-200 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded" href="#{{$key}}">{{$key}}</a>
         @endforeach
     </section>
+    <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($tagsArray as $key => $items)
-            <section class="mb-3">
+            <div class="mb-3 pt-3 border-t border-slate-300">
                 <h2 class="text-2xl font-bold text-gray-800 mb-3" id="{{$key}}"># {{$key}}</h2>
                     @foreach ($items as $item)
                         <article class="mb-3">
@@ -40,8 +41,9 @@
                         </article>
                         
                     @endforeach
-                </section>
+                    </div>
         @endforeach
+    </section>
 @endsection
 
 @section('sidebar')
