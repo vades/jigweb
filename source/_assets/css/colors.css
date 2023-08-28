@@ -1,0 +1,21 @@
+:root {
+    --color-text-base: 0, 0, 0;
+    --color-text-muted: 199, 210, 254;
+    --color-text-inverted: 79, 70, 229;
+    --color-bcg: 248, 250, 252;
+    --color-bcg-accent: 226, 232, 240;
+    --color-fill: 248, 250, 252;
+    --color-fill-accent: 226, 232, 240;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 238, 242, 255;
+    --color-button-muted: 99, 102, 241;
+  }
+  .dark {
+    --color-text-base: 255, 255, 255;
+    --color-text-muted: 254, 202, 202;
+    --color-text-inverted: 220, 38, 38;
+    --color-fill: 0, 0, 0;
+    --color-button-accent: 255, 255, 255;
+    --color-button-accent-hover: 254, 242, 242;
+    --color-button-muted: 239, 68, 68;
+  }

@@ -8,7 +8,7 @@
             </a>
         </div>
         <nav class="hidden lg:inline-block">
-            <a class="pl-4 text-white" href="/blog">Blog</a>
+            <a class="pl-4 text-skin-myabcd" href="/blog">Blog</a>
             <a class="pl-4 text-white" href="/tags">Tags</a>
             <a class="pl-4 text-white" href="/pages/about">About</a>
             <a class="pl-4 text-white" href="">Contact</a>

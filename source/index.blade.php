@@ -1,7 +1,7 @@
 
 <x-layouts.home :page="$page">
 @section('main')
-<section class="bg-slate-200 p-3 mb-4">
+<section class="bg-skin-fill-accent p-3 mb-4">
     @php
         $post = $posts->first();
     @endphp
