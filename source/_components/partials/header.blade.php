@@ -1,7 +1,7 @@
 <header class="bg-blue-700 drop-shadow-md">
     <section class="flex justify-between items-center container mx-auto p-3 md:p-4">
         <div class="header-brand">
-            <a class="flex items-center [&>*]:fill-white [&>*]:w-7" href="/">
+            <a class="flex items-center [&>*]:fill-skin-icon [&>*]:w-7" href="/">
                 <x-img.svg svg="logo" />
                 <span class="pl-2 hidden md:inline-block text-white">App&nbsp;Name</span>
     
