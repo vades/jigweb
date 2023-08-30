@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ $page->language ?? 'en' }}">
+<html class="dark_" lang="{{ $page->language ?? 'en' }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="bg-slate-50 text-gray-900 font-sans antialiased">
+    <body>
         <div class="flex flex-col h-screen justify-between">
             <x-partials.header />
             <x-partials.page>
