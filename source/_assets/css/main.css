@@ -3,5 +3,9 @@
 @import 'tailwindcss/utilities';
 
 @layer base {
-    @import 'colors';
-  }
+  @import 'colors';
+}
+
+@layer components {
+  @import 'typo';
+}

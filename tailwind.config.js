@@ -25,13 +25,19 @@ module.exports = {
           'heading': withOpacity('--color-text-heading'),
           'link': withOpacity('--color-text-link'),
           'link-hover': withOpacity('--color-text-link-hover'),
+          'header': withOpacity('--color-text-header'),
+          'header-muted': withOpacity('--color-text-header-muted'),
+          'footer': withOpacity('--color-text-footer'),
+          'footer-muted': withOpacity('--color-text-footer-muted'),
         },
       },
       backgroundColor: {
         skin: {
-          'fill': withOpacity('--color-fill'),
+          'base': withOpacity('--color-fill-base'),
           'accent': withOpacity('--color-fill-accent'),
-          'info-hover': withOpacity('--color-fill-info'),
+          'header': withOpacity('--color-fill-header'),
+          'footer': withOpacity('--color-fill-footer'),
+          'info': withOpacity('--color-fill-info'),
           'info-hover': withOpacity('--color-fill-info-hover'),
           'success': withOpacity('--color-fill-success'),
           'success-hover': withOpacity('--color-fill-success-hover'),
@@ -39,16 +45,20 @@ module.exports = {
           'warning-hover': withOpacity('--color-fill-warning-hover'),
           'danger': withOpacity('--color-fill-danger'),
           'danger-hover': withOpacity('--color-fill-danger-hover'),
+         
       },
       },
       borderColor: {
         skin: {
-          'color': withOpacity('--color-border'),
+          'base': withOpacity('--color-border-base'),
+          'muted': withOpacity('--color-border-muted'),
           'footer': withOpacity('--color-border-footer'),
         },
       },
       fill: {
         skin: {
+          'brand-primary': withOpacity('--color-brand-primary'),
+          'brand-secondary': withOpacity('--color-brand-secondary'),
           'icon': withOpacity('--color-fill-icon'),
         },
       },

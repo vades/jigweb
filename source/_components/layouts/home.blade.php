@@ -10,10 +10,13 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="bg-skin-fill text-skin-base font-sans antialiased">
+    <body>
         <div class="flex flex-col h-screen justify-between">
             <x-partials.header />
-            @yield('main') 
+            <main>
+                @yield('main') 
+            </main>
+           
             <x-partials.footer />
     </div>
         

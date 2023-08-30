@@ -1,0 +1,16 @@
+
+body{
+    @apply bg-skin-base text-skin-base font-sans antialiased; 
+}
+
+h1,h2,h3,h4,h5,h6 {
+    @apply text-skin-heading;
+}
+
+main a{
+    @apply !text-skin-link; 
+}
+
+main a:hover{
+    @apply !text-skin-link-hover underline; 
+}
