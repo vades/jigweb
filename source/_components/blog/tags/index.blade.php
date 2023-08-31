@@ -6,7 +6,7 @@
         
     @endphp
     <section class="mb-6">
-        <h1 class="text-3xl text-gray-8600 mb-3">{{ $page->title }}</h1>
+        <h1 class="text-3xl mb-3">{{ $page->title }}</h1>
         <div class="font-bold">
             {{ $page->description }}
         </div>
@@ -17,13 +17,13 @@
 
     <section class="mb-3">
         @foreach ($tagsArray as $key => $items)
-        <a class="bg-slate-200 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded" href="#{{$key}}">{{$key}}</a>
+        <a class="text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-skin-base border border-skin-base hover:bg-skin-accent hover:no-underline" href="#{{$key}}">{{$key}}</a>
         @endforeach
     </section>
     <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($tagsArray as $key => $items)
-            <div class="mb-3 pt-3 border-t border-slate-300">
-                <h2 class="text-2xl font-bold text-gray-800 mb-3" id="{{$key}}"># {{$key}}</h2>
+            <div class="mb-3 pt-3 border-t border-skin-base">
+                <h2 class="text-2xl font-bold mb-3" id="{{$key}}"># {{$key}}</h2>
                     @foreach ($items as $item)
                         <article class="mb-3">
                             {{-- @if ($item['post']['img'] ?? null)
@@ -33,7 +33,7 @@
                                 </a>
                                 </figure>
                             @endif --}}
-                            <h3 class="text-md text-gray-800 mb-3">
+                            <h3 class="text-md mb-3">
                                 <a href="{{$item['post']['path']}}" title="{{$item['post']['description']}}">
                                     {{$item['post']['title']}}
                                 </a>
