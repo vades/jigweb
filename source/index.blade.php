@@ -64,11 +64,11 @@
                         <img class="border-4 border-skin-base w-40" src="{{ $post->img }}" alt="{{ $post->title }}">
                     </a>
                 </figure>
-                <div class="">
+                <div>
                     <h2 class="text-2xl font-bold mb-3"><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h2>
                     <div class="post-extra text-sm mb-3">
-                        <span class="posts-author">{{ $post->author}}</span>
-                        <span class="posts-date">{{ date('F j, Y', $post->date) }}</span>
+                        <span>{{ $post->author}}</span>
+                        <span>{{ date('F j, Y', $post->date) }}</span>
                     </div>
                     <div class="mb-3">{{ $post->description}}</div>
                     <a class="text-lg" href="{{ $post->getPath() }}">Continue reading &raquo;</a>

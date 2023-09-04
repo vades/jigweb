@@ -4,45 +4,45 @@
 @endphp
 @section('main')
     <section class="mb-6">
-        <h1 class="text-3xl text-gray-8600 mb-3">{{ $page->title }}</h1>
+        <h1 class="text-3xl mb-3">{{ $page->title }}</h1>
         <div class="font-bold">
             {{ $page->description }}
         </div>
     </section>
-    <section class="content">
+    <section>
         @yield('content')
     </section>
    
     <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($pagination->items as $post)
-            <article class="flex flex-col md:flex-row md:items-start mb-3 pt-3 border-t border-slate-300">
+            <article class="flex flex-col md:flex-row md:items-start mb-3 pt-3 border-t border-skin-base">
                 <figure class="mb-3 md:mr-3">
                     <a href="{{ $post->getPath() }}">
-                        <img class="border-4 border-slate-300 w-40" src="{{ $post->img }}" alt="{{ $post->title }}">
+                        <img class="border-4 border-skin-base w-40" src="{{ $post->img }}" alt="{{ $post->title }}">
                     </a>
                 </figure>
-                <div class="">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-3"><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h2>
+                <div>
+                    <h2 class="text-2xl mb-3"><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h2>
                     <div class="post-extra text-sm mb-3">
-                        <span class="posts-author">{{ $post->author}}</span>
-                        <span class="posts-date">{{ date('F j, Y', $post->date) }}</span>
+                        <span>{{ $post->author}}</span>
+                        <span>{{ date('F j, Y', $post->date) }}</span>
                     </div>
                     <div class="mb-3">{{ $post->description}}</div>
-                    <a class="text-blue-800 text-lg" href="{{ $post->getPath() }}">Continue reading &raquo;</a>
+                    <a class="text-lg" href="{{ $post->getPath() }}">Continue reading &raquo;</a>
                 </div>
             </article>
         @endforeach
     </section>
   
     <section class="mx-auto text-center">
-        <nav class="inline-flex -space-x-px text-base h-10 [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md" aria-label="Page navigation example">
+        <nav class="inline-flex -space-x-px text-base h-10 [&>*:first-child]:rounded-l-md [&>*:last-child]:rounded-r-md  [&>a:hover]:no-underline" aria-label="Page navigation example">
 
             {{-- Check if there is a previous page available in the pagination --}}
             @if ($previous = $pagination->previous)
                 {{-- Display the link to the first page using the base URL --}}
                 {{-- <a class="flex items-center justify-center px-4 h-10 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" href="{{ $page->baseUrl }}{{ $pagination->first }}" title="First page">&lt;&lt;</a> --}}
                 {{-- Display the link to the previous page using the base URL --}}
-                <a class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" href="{{ $page->baseUrl }}{{ $previous }}" title="Previous page">&lt;</a>
+                <a class="flex items-center justify-center px-4 h-10 leading-tight bg-skin-base border border-skin-base hover:bg-skin-accent" href="{{ $page->baseUrl }}{{ $previous }}" title="Previous page">&lt;</a>
                 {{-- Display double and single left arrows indicating more previous pages --}}
             
             @endif
@@ -52,13 +52,13 @@
                 
                 @if ($pagination->currentPage == $pageNumber)
                   {{-- Current page --}}
-                  <span aria-current="page" class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white" href="{{ $page->baseUrl }}{{ $path }}">
+                  <span aria-current="page" class="flex items-center justify-center px-4 h-10 bg-skin-accent border border-skin-base hover:bg-skin-accent" href="{{ $page->baseUrl }}{{ $path }}">
                     {{-- Display the page number --}}
                     {{ $pageNumber }}
                   </span>
                 @else
                   {{-- Other pages with link --}}
-                  <a  class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" href="{{ $page->baseUrl }}{{ $path }}">
+                  <a  class="flex items-center justify-center px-4 h-10 leading-tight bg-skin-base border border-skin-base hover:bg-skin-accent" href="{{ $page->baseUrl }}{{ $path }}">
                     {{-- Display the page number --}}
                     {{ $pageNumber }}
                     </a>
@@ -70,7 +70,7 @@
             {{-- Check if there is a next page available in the pagination --}}
             @if ($next = $pagination->next)
                 {{-- Display the link to the next page using the base URL --}}
-                <a class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" href="{{ $page->baseUrl }}{{ $next }}" title="Next page">&gt;</a>
+                <a class="flex items-center justify-center px-4 h-10 leading-tight bg-skin-base border border-skin-base hover:bg-skin-accent"  href="{{ $page->baseUrl }}{{ $next }}" title="Next page">&gt;</a>
                 {{-- Display the link to the last page using the base URL --}}
                 {{-- <a class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-r-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white" href="{{ $page->baseUrl }}{{ $pagination->last }}" title="Last page">&gt;&gt;</a> --}}
             @else
