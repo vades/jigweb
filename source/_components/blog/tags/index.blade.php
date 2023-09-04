@@ -23,7 +23,7 @@
     <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($tagsArray as $key => $items)
             <div class="mb-3 pt-3 border-t border-skin-base">
-                <h2 class="text-2xl font-bold mb-3" id="{{$key}}"># {{$key}}</h2>
+                <h2 class="text-2xl mb-3" id="{{$key}}"># {{$key}}</h2>
                     @foreach ($items as $item)
                         <article class="mb-3">
                             {{-- @if ($item['post']['img'] ?? null)

@@ -13,12 +13,12 @@
         @endif
 
         <div>
-            <h1 class="text-3xl font-bold mb-3">{{ $page->title }}</h1>
+            <h1 class="text-3xl mb-3">{{ $page->title }}</h1>
             <div class="text-sm mb-3">
                 <span>{{ $page->author}}</span>
                 <span>{{ date('F j, Y', $page->date) }}</span>
             </div>
-            <div class="perex">
+            <div class="font-bold">
                 {{ $page->description }}
             </div>
         </div>

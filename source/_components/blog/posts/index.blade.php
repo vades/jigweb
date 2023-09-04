@@ -9,7 +9,7 @@
             {{ $page->description }}
         </div>
     </section>
-    <section class="content">
+    <section>
         @yield('content')
     </section>
    
@@ -22,7 +22,7 @@
                     </a>
                 </figure>
                 <div>
-                    <h2 class="text-2xl font-bold mb-3"><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h2>
+                    <h2 class="text-2xl mb-3"><a href="{{ $post->getPath() }}">{{ $post->title }}</a></h2>
                     <div class="post-extra text-sm mb-3">
                         <span>{{ $post->author}}</span>
                         <span>{{ date('F j, Y', $post->date) }}</span>
