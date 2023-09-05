@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="dark_" lang="{{ $page->language ?? 'en' }}">
+<html class="dark" lang="{{ $page->language ?? 'en' }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,7 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body>
-        <div class="flex flex-col h-screen justify-between">
+        <div class="bg-skin-base flex flex-col h-screen justify-between">
             <x-partials.header />
             <main>
                 @yield('main') 
