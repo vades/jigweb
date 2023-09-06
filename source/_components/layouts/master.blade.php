@@ -14,6 +14,9 @@
         <div class="flex flex-col h-screen justify-between">
             <x-partials.header />
             <x-partials.page>
+                <x-slot:jumbotron>
+                    @yield('jumbotron')
+                </x-slot>
                 <slot>
                     @yield('main') 
                 </slot>
