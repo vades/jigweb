@@ -2,9 +2,9 @@
 published: true
 title: "About this website"
 description: "On this website you will find a bunch of photo galleries and little stories about the famous locations and history of Nuremberg"
-metaTitle: "About title"
+metaTitle: "About meta title"
 metaDescription: "About meta description"
-keywords: "kw1, kw2"
+keywords: "pkw1, pkw2"
 img: "https://picsum.photos/200/200"
 ---
 

@@ -7,8 +7,10 @@ use App\Collections\PostTagsCollection;
 return [
     'production' => false,
     'baseUrl' => '',
+    'appName' => 'Jigsaw',
     'title' => 'Jigsaw',
     'description' => 'Website description.',
+    'keywords' => 'kw1, kw2',
     'getTagsCollection' => function ($page, $collection) {
         $tagsCollection = new PostTagsCollection($collection);
         return $tagsCollection->getCollection();
