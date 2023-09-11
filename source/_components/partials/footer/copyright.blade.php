@@ -1,0 +1,1 @@
+<span>©{{ date('Y') }} App Name</span>
