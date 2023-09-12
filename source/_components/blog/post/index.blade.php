@@ -13,7 +13,7 @@
     @if (count($tags) > 0)
         <div>
             @foreach ($tags as $tag)
-                <x-blog.post.tag :tag="$tag"></x-blog.post.tag>
+            <x-partials.nav.tag :tag="$tag" :tagLink="'/tags#'.$tag"></x-partials.nav.tag>
             @endforeach
         </div>
     @endif
