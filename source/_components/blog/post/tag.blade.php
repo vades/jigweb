@@ -1,0 +1,1 @@
+<a class="text-xs font-medium mr-2 px-2.5 py-0.5 rounded bg-skin-base border border-skin-base hover:bg-skin-accent hover:no-underline" href="/tags#{{$tag}}">{{$tag}}</a>
