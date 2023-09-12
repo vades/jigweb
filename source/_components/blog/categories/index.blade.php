@@ -1,24 +1,13 @@
 <x-layouts.master :page="$page">
     
 @section('main')
-    <section class="mb-6">
-        <h1 class="text-3xl mb-3">{{ $page->title }}</h1>
-        <div class="font-bold">
-            {{ $page->description }}
-        </div>
-    </section>
+    <x-partials.page.head :page="$page"></x-partials.page.head>
     <section class="content">
         @yield('content')
     </section>
     <section class="lg:grid lg:grid-cols-2 gap-3">
         @foreach ($categories as $category)
-            <article class="mb-3 pt-3 border-t border-skin-base">
-                <h2 class="text-2xl mb-3">
-                    <a href="{{ $category->getUrl() }}">{{ $category->title }}</a>
-                </h2>
-                <div class="mb-3">{{ $category->description}}</div>
-                <a class="text-lg" href="{{ $category->getUrl() }}">Show articles for this category &raquo;</a>
-            </article>
+            <x-blog.categories.list :category="$category"></x-blog.categories.list>
         @endforeach
     </section>
 @endsection

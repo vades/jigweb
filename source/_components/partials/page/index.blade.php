@@ -1,5 +1,6 @@
 
-@if (isset($jumbotron))
+@if (isset($jumbotron) && $jumbotron->isNotEmpty())
+
 <section class="bg-skin-accent p-3 mb-4">
     <div class="md:p-0 md:container md:mx-auto">{{ $jumbotron }}</div>
 </section>
